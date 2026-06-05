@@ -292,7 +292,7 @@ h4 {
   background:
     linear-gradient(90deg, rgba(9, 10, 15, 0.9) 0%, rgba(53, 20, 41, 0.74) 39%, rgba(53, 20, 41, 0.18) 72%),
     linear-gradient(135deg, rgba(177, 50, 116, 0.28), rgba(24, 99, 220, 0.16)),
-    url('/images/hero-osm.png') center / cover no-repeat,
+    url('/images/hero-osm.webp') center / cover no-repeat,
     #351429;
 }
 
