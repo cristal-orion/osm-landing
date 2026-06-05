@@ -1,0 +1,21 @@
+# Dipendenze e build
+node_modules
+dist
+.astro
+
+# NON committare il lockfile: il Dockerfile fa npm install fresco
+# per ottenere i binari nativi corretti per Linux (vedi regole Coolify)
+package-lock.json
+
+# Cartelle di lavoro locali
+.agents
+.codex
+scripts
+
+# Asset originali tenuti solo in locale (le versioni usate sono in public/images/)
+/*.png
+/team/
+
+# Sistema
+.DS_Store
+*.log

@@ -1,0 +1,11 @@
+node_modules
+dist
+.astro
+.git
+.agents
+.codex
+scripts
+team
+package-lock.json
+# Asset originali (gli ottimizzati sono in public/images/)
+/*.png

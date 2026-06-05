@@ -1,0 +1,317 @@
+---
+import '../styles/global.css';
+
+const services = [
+  ['Selezione del Personale', 'Troviamo persone allineate ai valori dell’impresa e pronte a produrre risultati.'],
+  ['Formazione', 'Percorsi pratici per imprenditori, manager e team commerciali.'],
+  ['Coaching', 'Affiancamento diretto per sbloccare leadership, delega e responsabilità.'],
+  ['Consulenza Organizzativa', 'Processi chiari, ruoli definiti e numeri leggibili per decidere meglio.'],
+  ['Assessment', 'Analisi di potenziale, clima e aree di miglioramento del team.'],
+  ['Employer Branding', 'Rendiamo la tua azienda più attrattiva per i migliori talenti.']
+];
+
+const team = [
+  ['/images/team/walter-giacobbe.png', 'Walter Giacobbe', 'Partner OSM Evolution'],
+  ['/images/team/nunzia-giordano.png', 'Nunzia M. Giordano', 'Partner OSM Evolution']
+];
+
+const testimonials = [
+  ['“Con OSM abbiamo inserito figure chiave e reso più chiara la gestione del team.”', 'Imprenditore settore food'],
+  ['“Un metodo concreto: meno teoria, più strumenti applicati subito in azienda.”', 'CEO PMI manifatturiera'],
+  ['“Ci siamo sentiti parte di un network nazionale, ma seguiti da persone vicine alla nostra impresa.”', 'Founder servizi B2B']
+];
+
+const profiles = [
+  ['Startup', 'Hai un’idea o un’attività ai primi passi e vuoi farla crescere su basi solide.'],
+  ['Imprenditore', 'Guidi un’azienda avviata e cerchi più organizzazione, margini e tempo per te.'],
+  ['Investitore', 'Vuoi far fruttare il tuo capitale con il supporto di un metodo e di un network.'],
+  ['Passaggio Generazionale', 'Devi traghettare l’impresa alla generazione successiva senza disperdere valore.']
+];
+
+const painPoints = [
+  'Lavori troppe ore e non trovi più tempo per te.',
+  'Fatichi a trovare e trattenere collaboratori validi.',
+  'Senti la crescita bloccata e non sai da dove ripartire.',
+  'Vorresti delegare, ma non ti fidi a lasciare andare.',
+  'I numeri dell’azienda non sono chiari quando devi decidere.',
+  'Stai affrontando un passaggio generazionale delicato.'
+];
+
+const values = [
+  ['Libertà', 'Imprese e persone capaci di scegliere il proprio percorso.'],
+  ['Aiuto', 'Esistiamo per far crescere chi affianchiamo.'],
+  ['Integrità', 'Coerenza tra ciò che diciamo e ciò che facciamo.'],
+  ['Meritocrazia', 'Il valore si riconosce in base ai risultati.'],
+  ['Miglioramento continuo', 'Ogni giorno un passo avanti, mai fermi.'],
+  ['Allegria', 'Si lavora e si cresce meglio in un clima positivo.'],
+  ['Fiducia', 'La base di ogni relazione che dura nel tempo.']
+];
+
+const sectionImages = {
+  profiles: ['/images/partiamo-da-te.png', 'Percorsi di crescita per startup, imprenditori, investitori e passaggi generazionali'],
+  challenges: ['/images/sfide.png', 'Imprenditore che affronta le sfide aziendali con il supporto di un consulente'],
+  services: ['/images/servizi.png', 'Workshop aziendale sui servizi OSM per recruiting, formazione, coaching e organizzazione'],
+  method: ['/images/metodo.png', 'Metodo OSM applicato alla crescita di persone, vendite e organizzazione aziendale']
+};
+---
+
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="OSM Evolution affianca imprenditori e PMI con consulenza, formazione, recruiting e coaching secondo il metodo Open Source Management." />
+    <link rel="icon" type="image/png" href="/favicon.png?v=2" />
+    <title>OSM Evolution | Human Centered Business Partner</title>
+  </head>
+  <body>
+    <header class="site-header" aria-label="Navigazione principale">
+      <a class="brand" href="#top" aria-label="OSM Evolution home">
+        <img class="brand-logo" src="/images/logo-osm.png" alt="OSM Evolution" width="847" height="437" />
+      </a>
+      <nav class="main-nav" aria-label="Menu principale">
+        <a href="#servizi">Servizi</a>
+        <a href="#valori">Valori</a>
+        <a href="#team">Team</a>
+        <a href="#contatti">Contatti</a>
+      </nav>
+      <a class="nav-cta" href="#contatti">Consulenza gratuita</a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-media" aria-hidden="true"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <p class="eyebrow">Human Centered Business Partner</p>
+          <h1 id="hero-title">Il tuo partner per la crescita aziendale</h1>
+          <p class="hero-copy">Affianchiamo imprenditori e PMI con il metodo OSM: persone, organizzazione e numeri al servizio di risultati tangibili.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contatti">Richiedi una consulenza gratuita</a>
+            <a class="btn btn-ghost" href="#servizi">Scopri i nostri servizi</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="chi-siamo" class="stats-section section-compact" aria-label="Numeri OSM">
+        <div class="container stats-grid">
+          <article class="stat-card">
+            <strong>2.000+</strong>
+            <span>Aziende seguite in Italia</span>
+          </article>
+          <article class="stat-card">
+            <strong>80%</strong>
+            <span>Clienti che fanno crescere il fatturato</span>
+          </article>
+          <article class="stat-card">
+            <strong>25+</strong>
+            <span>Anni di metodo OSM</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="profili" class="section" aria-labelledby="profili-title">
+        <div class="container section-heading">
+          <p class="eyebrow">Partiamo da te</p>
+          <h2 id="profili-title">Da dove vuoi far partire la crescita?</h2>
+          <p>Qualunque sia il tuo punto di partenza, costruiamo il percorso giusto per la tua impresa.</p>
+        </div>
+        <figure class="container section-visual">
+          <img src={sectionImages.profiles[0]} alt={sectionImages.profiles[1]} width="1693" height="929" loading="lazy" />
+        </figure>
+        <div class="container profiles-grid">
+          {profiles.map(([title, text]) => (
+            <article class="profile-card">
+              <h3>{title}</h3>
+              <p>{text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section id="sfide" class="section section-soft" aria-labelledby="sfide-title">
+        <div class="container section-heading">
+          <p class="eyebrow">Ti riconosci?</p>
+          <h2 id="sfide-title">Le sfide di ogni imprenditore</h2>
+          <p>Sono ostacoli comuni. Con il metodo OSM diventano il punto di partenza per crescere.</p>
+        </div>
+        <figure class="container section-visual">
+          <img src={sectionImages.challenges[0]} alt={sectionImages.challenges[1]} width="1564" height="1006" loading="lazy" />
+        </figure>
+        <div class="container pain-grid">
+          {painPoints.map((text) => (
+            <article class="pain-card">
+              <span class="pain-mark" aria-hidden="true">?</span>
+              <p>{text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section id="servizi" class="section" aria-labelledby="services-title">
+        <div class="container section-heading">
+          <p class="eyebrow">Come possiamo aiutarti</p>
+          <h2 id="services-title">Servizi per far crescere la tua impresa</h2>
+          <p>Soluzioni essenziali, misurabili e adatte alle esigenze reali dell’impresa.</p>
+        </div>
+        <figure class="container section-visual">
+          <img src={sectionImages.services[0]} alt={sectionImages.services[1]} width="1672" height="941" loading="lazy" />
+        </figure>
+        <div class="container services-grid">
+          {services.map(([title, text], index) => (
+            <article class="service-card">
+              <span class="service-number">0{index + 1}</span>
+              <h3>{title}</h3>
+              <p>{text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section id="valori" class="section values-section" aria-labelledby="valori-title">
+        <div class="container section-heading">
+          <p class="eyebrow">Chi siamo</p>
+          <h2 id="valori-title">I valori che guidano OSM</h2>
+          <p>Prima del metodo vengono le persone e i principi su cui costruiamo ogni collaborazione.</p>
+        </div>
+        <div class="container values-grid">
+          {values.map(([title, text]) => (
+            <article class="value-card">
+              <h3>{title}</h3>
+              <p>{text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section class="split-section" aria-labelledby="why-title">
+        <div class="container split-grid">
+          <div class="split-copy">
+            <p class="eyebrow">Perché sceglierci</p>
+            <h2 id="why-title">Metodo OSM, risultati concreti</h2>
+            <p>OSM unisce consulenza pratica, formazione e strumenti operativi alla forza del network nazionale Open Source Management.</p>
+            <ul class="check-list">
+              <li>Metodo pratico per PMI, studi e aziende familiari.</li>
+              <li>Consulenti vicini alle dinamiche reali della tua impresa.</li>
+              <li>Percorsi personalizzati su persone, vendite e organizzazione.</li>
+            </ul>
+            <a class="btn btn-primary" href="#contatti">Parliamone insieme</a>
+          </div>
+          <figure class="image-panel">
+            <img src={sectionImages.method[0]} alt={sectionImages.method[1]} width="1448" height="1086" loading="lazy" />
+          </figure>
+        </div>
+      </section>
+
+      <section class="section testimonials" aria-labelledby="testimonials-title">
+        <div class="container testimonials-layout">
+          <div class="section-heading align-left">
+            <p class="eyebrow">I nostri risultati</p>
+            <h2 id="testimonials-title">Cosa dicono gli imprenditori</h2>
+          </div>
+          <div class="testimonial-card" data-testimonial>
+            <p class="quote">{testimonials[0][0]}</p>
+            <p class="author">{testimonials[0][1]}</p>
+            <div class="testimonial-controls" aria-label="Controlli testimonianze">
+              <button type="button" data-prev aria-label="Testimonianza precedente">‹</button>
+              <button type="button" data-next aria-label="Testimonianza successiva">›</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="team" class="section team-section" aria-labelledby="team-title">
+        <div class="container section-heading">
+          <p class="eyebrow">Il team</p>
+          <h2 id="team-title">Professionisti al fianco della tua azienda</h2>
+        </div>
+        <div class="container team-grid">
+          {team.map(([image, name, role]) => (
+            <article class="team-card">
+              <img class="team-photo" src={image} alt={`Foto di ${name}`} width="600" height="640" loading="lazy" />
+              <div>
+                <h3>{name}</h3>
+                <p>{role}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section id="contatti" class="final-cta" aria-labelledby="contact-title">
+        <div class="container cta-grid">
+          <div>
+            <p class="eyebrow light">Consulenza gratuita</p>
+            <h2 id="contact-title">Porta la tua azienda al livello successivo</h2>
+            <p>Contattaci direttamente per raccontarci dove vuoi arrivare.</p>
+          </div>
+          <div class="contact-card" aria-label="Recapiti OSM">
+            <a href="tel:+393476816015">347 681 6015</a>
+            <a href="mailto:w.giacobbe@osmvalue.it">w.giacobbe@osmvalue.it</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand footer-brand" href="#top">
+            <img class="brand-logo footer-logo" src="/images/logo-osm.png" alt="OSM Evolution" width="847" height="437" />
+          </a>
+          <p>Partner per la crescita aziendale nel network Open Source Management.</p>
+        </div>
+        <div>
+          <h4>Contatti</h4>
+          <p>Italia<br />w.giacobbe@osmvalue.it<br />347 681 6015</p>
+        </div>
+        <div>
+          <h4>Navigazione</h4>
+          <a href="#chi-siamo">Chi siamo</a>
+          <a href="#servizi">Servizi</a>
+          <a href="#team">Team</a>
+          <a href="#contatti">Contatti</a>
+        </div>
+        <div>
+          <h4>Social</h4>
+          <a href="#">LinkedIn</a>
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">© 2026 OSM. Network nazionale Open Source Management.</div>
+    </footer>
+
+    <script define:vars={{ testimonials }}>
+      const card = document.querySelector('[data-testimonial]');
+      const quote = card?.querySelector('.quote');
+      const author = card?.querySelector('.author');
+      const prev = card?.querySelector('[data-prev]');
+      const next = card?.querySelector('[data-next]');
+      let active = 0;
+
+      function renderTestimonial(direction = 1) {
+        if (!quote || !author) return;
+        card.animate(
+          [
+            { opacity: 0.7, transform: `translateX(${direction * 10}px)` },
+            { opacity: 1, transform: 'translateX(0)' }
+          ],
+          { duration: 220, easing: 'ease-out' }
+        );
+        quote.textContent = testimonials[active][0];
+        author.textContent = testimonials[active][1];
+      }
+
+      prev?.addEventListener('click', () => {
+        active = (active - 1 + testimonials.length) % testimonials.length;
+        renderTestimonial(-1);
+      });
+
+      next?.addEventListener('click', () => {
+        active = (active + 1) % testimonials.length;
+        renderTestimonial(1);
+      });
+    </script>
+  </body>
+</html>
