@@ -19,3 +19,7 @@ scripts
 # Sistema
 .DS_Store
 *.log
+
+# tasteskill working files
+.taste-skill/
+shots/
